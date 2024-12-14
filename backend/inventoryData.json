@@ -1,0 +1,29 @@
+[
+  {
+    "id": "farine",
+    "nom": "Farine",
+    "unite": "g",
+    "quantiteTotale": 3000,
+    "quantiteInitiale": 3000,
+    "quantiteParUnite": 3,
+    "nombreUnites": 1000
+  },
+  {
+    "id": "coca_cola",
+    "nom": "Coca Cola",
+    "unite": "L",
+    "quantiteTotale": 3,
+    "quantiteInitiale": 6,
+    "quantiteParUnite": 6,
+    "nombreUnites": 1
+  },
+  {
+    "id": "riz",
+    "nom": "Riz",
+    "unite": "g",
+    "quantiteTotale": 500,
+    "quantiteInitiale": 1500,
+    "quantiteParUnite": 3,
+    "nombreUnites": 500
+  }
+]

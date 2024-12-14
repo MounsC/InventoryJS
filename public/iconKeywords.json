@@ -1,0 +1,100 @@
+﻿{
+  "keywords": [
+    {
+      "icon": "bi-droplet",
+      "matches": [
+        "eau", "water", "bouteille d'eau", "carafe d'eau", "eau minérale"
+      ]
+    },
+    {
+      "icon": "bi-cup-straw",
+      "matches": [
+        "lait", "milk", "lait demi-écrémé", "lait entier", "lait écrémé", "lait fermenté",
+        "fromage", "cheese", "yaourt", "yogurt", "beurre", "butter", "crème fraîche",
+        "camembert", "emmental", "mozzarella", "chèvre", "mascarpone", "brie"
+      ]
+    },
+    {
+      "icon": "bi-bag",
+      "matches": [
+        "farine", "flour", "fécule", "maïzena", "amidon"
+      ]
+    },
+    {
+      "icon": "bi-droplet-half",
+      "matches": [
+        "huile", "oil", "olive oil", "huile d'olive", "huile de tournesol", "huile de colza"
+      ]
+    },
+    {
+      "icon": "bi-basket3-fill",
+      "matches": [
+        "fruit", "fruits", "pomme", "apple", "banane", "banana", "fraise", "strawberry", "ananas", "pineapple",
+        "pomme de terre", "patate", "tomate", "tomato", "orange", "poire", "pear", "cerise", "cherry", "framboise", "raspberry",
+        "raisin", "grape", "kiwi", "pasteque", "pastèque", "melon", "watermelon",
+        "légume", "légumes", "vegetable", "vegetables", "carotte", "carrot", "poivron", "pepper",
+        "aubergine", "eggplant", "courgette", "zucchini", "chou", "cabbage", "brocoli", "broccoli",
+        "haricot vert", "green bean", "oignon", "onion", "ail", "garlic", "échalote", "shallot"
+      ]
+    },
+    {
+      "icon": "bi-basket2-fill",
+      "matches": [
+        "viande", "meat", "poulet", "chicken", "bœuf", "boeuf", "beef", "porc", "pork", "steak",
+        "agneau", "lamb", "veau", "veal", "jambon", "ham", "saucisse", "sausage",
+        "salami", "lard", "bacon"
+      ]
+    },
+    {
+      "icon": "bi-fish",
+      "matches": [
+        "poisson", "fish", "saumon", "salmon", "thon", "tuna", "cabillaud", "cod",
+        "crustacé", "crustacean", "crevette", "shrimp", "homard", "lobster", "crabe", "crab", "moules", "mussels"
+      ]
+    },
+    {
+      "icon": "bi-basket-fill",
+      "matches": [
+        "riz", "rice", "grain", "grains", "céréale", "céréales", "cereal", "cereals",
+        "blé", "wheat", "avoine", "oat", "quinoa", "couscous", "semoule",
+        "pâtes", "pasta", "spaghetti", "penne", "fusilli", "macaroni", "nouilles", "noodles"
+      ]
+    },
+    {
+      "icon": "bi-cup",
+      "matches": [
+        "boisson", "boissons", "drink", "drinks", "jus", "juice", "soda", "limonade", "lemonade", "coca", "coke",
+        "thé", "tea", "café", "coffee", "bière", "beer", "vin", "wine", "champagne", "aperitif", "apéritif"
+      ]
+    },
+    {
+      "icon": "bi-heart-fill",
+      "matches": [
+        "sucre", "sugar", "chocolat", "chocolate", "cacao", "miel", "honey", "confiture", "jam", "dessert", "desserts",
+        "pâtisserie", "pastry", "biscuits", "cookies", "gâteau", "gateau", "cake", "tarte", "pie", "crème dessert",
+        "bonbon", "candy", "confiserie", "fraisier", "éclair", "macaron", "muffin", "brownie"
+      ]
+    },
+    {
+      "icon": "bi-bread-slice",
+      "matches": [
+        "pain", "bread", "baguette", "brioche", "croissant", "céréales petit déjeuner", "cereals breakfast", "muesli",
+        "flocon d'avoine", "oat flakes", "toast"
+      ]
+    },
+    {
+      "icon": "bi-egg-fill",
+      "matches": [
+        "oeuf", "oeufs", "œuf", "œufs", "egg", "eggs"
+      ]
+    },
+    {
+      "icon": "bi-flower3",
+      "matches": [
+        "épice", "épices", "spice", "spices", "herbe", "herbes", "herbs", "basilic", "basil", "persil", "parsley",
+        "coriandre", "coriander", "cumin", "curcuma", "turmeric", "paprika", "sel", "salt", "poivre", "pepper",
+        "menthe", "mint", "thym", "thyme", "romarin", "rosemary", "origan", "oregano"
+      ]
+    }
+  ]
+}

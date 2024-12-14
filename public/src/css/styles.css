@@ -1,0 +1,23 @@
+﻿.btn-floating {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stock-ok {
+    background-color: #d4edda; /* vert pâle */
+}
+
+.stock-moyen {
+    background-color: #fff3cd; /* jaune pâle */
+}
+
+.stock-faible {
+    background-color: #f8d7da; /* rouge pâle */
+}

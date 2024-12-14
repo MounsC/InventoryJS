@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Inventaire - Gestion des courses</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="src/css/styles.css" />
+</head>
+<body class="bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <span class="navbar-brand">Inventaire</span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <form class="d-flex ms-auto" role="search">
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-search"></i></span>
+                    <input type="text" id="searchInput" class="form-control" placeholder="Rechercher..." />
+                </div>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="container my-4">
+
+    <div class="row" id="inventoryContainer">
+    </div>
+</div>
+
+<button class="btn btn-primary btn-floating" data-bs-toggle="modal" data-bs-target="#addModal">
+    <i class="bi bi-plus"></i>
+</button>
+
+<div class="modal fade" id="addModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form id="addForm">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ajouter un produit</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="nom" class="form-label">Nom du produit</label>
+                        <input type="text" id="nom" class="form-control" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="quantiteUnite" class="form-label">Quantité par unité</label>
+                        <input type="number" id="quantiteUnite" class="form-control" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="nombreUnites" class="form-label">Nombre d'unités</label>
+                        <input type="number" id="nombreUnites" class="form-control" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="unite" class="form-label">Unité (ex: g, L)</label>
+                        <input type="text" id="unite" class="form-control" required />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Ajouter</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="useModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form id="useForm">
+                <div class="modal-header">
+                    <h5 class="modal-title">Utiliser une partie du produit</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" id="useProductId" />
+                    <div class="mb-3">
+                        <label for="useQuantity" class="form-label">Quantité à utiliser</label>
+                        <input type="number" class="form-control" id="useQuantity" required />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Valider</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="editModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form id="editForm">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modifier le produit</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" id="editProductId" />
+                    <div class="mb-3">
+                        <label for="editNom" class="form-label">Nom du produit</label>
+                        <input type="text" id="editNom" class="form-control" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="editQuantiteUnite" class="form-label">Quantité par unité</label>
+                        <input type="number" id="editQuantiteUnite" class="form-control" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="editNombreUnites" class="form-label">Nombre d'unités</label>
+                        <input type="number" id="editNombreUnites" class="form-control" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="editUnite" class="form-label">Unité (ex: g, L)</label>
+                        <input type="text" id="editUnite" class="form-control" required />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Enregistrer</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="src/js/main.js"></script>
+</body>
+</html>
