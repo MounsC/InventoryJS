@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Synthèse des Stocks</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="src/css/styles.css" />
+</head>
+<body class="bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <span class="navbar-brand">Synthèse</span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inventaire</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container my-4">
+    <h1 class="mb-4">Synthèse globale des stocks</h1>
+
+    <div class="row mb-4">
+        <div class="col-md-4 mb-3">
+            <div class="card shadow-sm">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Nombre de produits</h5>
+                    <p class="h2" id="totalProducts">0</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card shadow-sm">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Quantité totale</h5>
+                    <p class="h2" id="totalQuantity">0</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card shadow-sm">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Répartition du stock</h5>
+                    <div class="d-flex justify-content-around align-items-center mt-3">
+                        <div>
+                            <span class="badge bg-success" id="countOk">0</span><br> Satisfaisant
+                        </div>
+                        <div>
+                            <span class="badge bg-warning text-dark" id="countMoyen">0</span><br> Moyen
+                        </div>
+                        <div>
+                            <span class="badge bg-danger" id="countFaible">0</span><br> Faible
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="h4 mb-3">Top 5 des produits (par quantité)</h2>
+    <table class="table table-striped align-middle">
+        <thead>
+        <tr>
+            <th>Produit</th>
+            <th>Quantité</th>
+            <th>Unité</th>
+        </tr>
+        </thead>
+        <tbody id="topProductsBody">
+        </tbody>
+    </table>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="src/js/summary.js"></script>
+</body>
+</html>
